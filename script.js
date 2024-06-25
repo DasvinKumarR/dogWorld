@@ -5,7 +5,7 @@ async function getImage(){
     try {
         let response = await fetch('https://dog.ceo/api/breeds/image/random')
         let data = await response.json();
-        let imageUrl = data.message;
+        let imageUrl = await data.message;
         root.innerHTML = `<img src="${imageUrl}" alt="Dog Image Loading..."/>`
     } catch (error) {
         console.log(error)
