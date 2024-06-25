@@ -1,0 +1,38 @@
+/* set navbar background */
+.navbar{
+    background-color: #795548;
+}
+/* setting title size and color */
+.header{
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: white;
+}
+/* setting content div to flex and display the content at center */
+.content{
+    background-color: #8D6E63;
+    height: 89.1vh; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* setting text size */
+.text{
+    font-size: 2rem;
+}
+/* setting image size to display dog image */
+img{
+    height: 350px;
+    width: 300px;
+}
+/* set font size and content div height for screen widht less then 600px */
+@media only screen and (max-width:600px){
+    .text{
+        font-size: 14px;
+    }
+    .content{
+        height: 91.5vh;
+    }
+}
